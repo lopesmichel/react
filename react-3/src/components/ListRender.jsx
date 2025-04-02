@@ -10,10 +10,10 @@ const ListRender = () => {
   ]);
 
   const deleteRandom = () => {
-    const randomNumber = Math.floor(Math.random() * users.length) + 1; // Garante um ID válido
+    const randomNumber = Math.floor(Math.random() * users.length) + 1; 
 
     setUsers((prevUsers) => {
-      return prevUsers.filter((user) => user.id !== randomNumber); // Agora a comparação está correta
+      return prevUsers.filter((user) => user.id !== randomNumber); 
     });
   };
 
